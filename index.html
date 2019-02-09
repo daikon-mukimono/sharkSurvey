@@ -9,14 +9,24 @@
     <h1 id="title">Shark Survey</h1>
     <p id = description>A survey about sharks, apex predators of the ocean.</p>
     <form class="sharks" id="survey-form" action="index.html" method="post">
-      What's your name?<br>
+        <label for="name">What's your name?</label><br>
       <input type="text" name="name" id="name" value="Chief Martin Brody" required>
       <br><br>
-      Enter your email:
-      <input type="email" name="email" id="email">
+      <label for="email">Enter your email</label>
+      <input type="email" name="email" id="email" required>
       <br><br>
-      How many sharks have you seen?
-      <input type="number" name="no_sharks" value="2">
+      <label for="number">How many sharks have you seen?</label>
+      <input type="number" name="no_sharks" value="2" id="number">
+      <br><br>
+      <label for="dropdown">Where would you rather see a shark?</label>
+      <select class="drop" name="drop" id="dropdown">
+        <option value="the beach">the beach</option>
+        <option value="open ocean">open ocean</option>
+        <option value="a river">a river</option>
+      </select>
+
+      
+
     </form>
 
 
